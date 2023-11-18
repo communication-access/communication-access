@@ -5,12 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="author" content="Nneka Nnagbo">
     <meta name="generator" content="Hugo 0.98.0">
     <!--<title>Starter Template · Bootstrap v5.2</title>-->
     <title>Communication Access Toolkit for Online Meetings</title>
     <link rel="icon" type="image/svg+xml" href="/image/arrow-right-square-fill.svg">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/starter-template/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 
 
 
@@ -21,12 +24,17 @@
 
 
     <style>
+
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
             -webkit-user-select: none;
             -moz-user-select: none;
             user-select: none;
+        }
+
+        .lead-bttn {
+            margin-right: 0.5rem;
         }
 
         @media (min-width: 768px) {
@@ -72,11 +80,86 @@
             -webkit-overflow-scrolling: touch;
         }
 
+        /* Styles for badges */
+
+.bg-primary-subtle {
+    background-color: var(--bs-primary-bg-subtle)!important;
+}
+.text-primary-emphasis {
+    color: var(--bs-primary-text-emphasis)!important;
+}
+
+        .bg-info-subtle {
+            background-color: var(--bs-info-bg-subtle)!important;
+        }
+
+        .text-info-emphasis {
+            color: var(--bs-info-text-emphasis)!important;
+        }
+        .bg-dark-subtle {
+            background-color: var(--bs-dark-bg-subtle)!important;
+        }
+
+        .text-dark-emphasis {
+            color: var(--bs-dark-text-emphasis)!important;
+        }
+        .bg-secondary-subtle {
+            background-color: var(--bs-secondary-bg-subtle)!important;
+        }
+        .text-secondary-emphasis {
+            color: var(--bs-secondary-text-emphasis)!important;
+        }
+
+        .bg-light-subtle {
+    background-color: var(--bs-light-bg-subtle)!important;
+}
+.text-light-emphasis {
+    color: var(--bs-light-text-emphasis)!important;
+}
+.border-light-subtle {
+    border-color: var(--bs-light-border-subtle)!important;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 10px;
+}
+
+.card-img-top {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.btn-group-sm > .btn, .btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: .875rem;
+    border-radius: 0.5rem;
+    /* border-radius: 0.2rem; */
+    font-family: 'IBM Plex Mono', sans-serif;
+}
+
+.btn-outline-primary {
+    color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.intro-btn {
+    font-family: 'IBM Plex Mono', sans-serif;
+}
+        
+
     </style>
 
 
     <!-- Custom styles for this template -->
-    <link href="../brain-child/css/starter-template.css" rel="stylesheet">
+    <link href="css/starter-template.css" rel="stylesheet">
 </head>
 
 <body>
@@ -87,34 +170,42 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" fill="currentColor" class="me-2 bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z" />
                 </svg>
-                <span class="fs-4">Communication Access Toolkit for Online Meetings</span>
+                <!-- <span class="fs-4">Communication Access Toolkit for Online Meetings</span> -->
             </a>
         </header>
 
         <main>
-            <!--<h1>title</h1>-->
-            <p class="fs-5 col-md-8">An open source toolkit for sharing knowledge about how to design, organize, and facilitate accessible and inclusive online sessions that accommodate persons with complex communication access needs.</p>
-
+            
+            <!-- intro paragraph -->
+            <div class="col-md-12">
+            <h1 class="highlight-h1">Communication Access Toolkit for Online Meetings</h1>
+            <p class="fs-3 mt-4 mb-4">An open source toolkit for sharing knowledge about how to design, organize, and facilitate accessible and inclusive online sessions that accommodate persons with complex communication access needs.</p>
+        </div>
+        <!-- intro buttons -->
             <div class="mb-5">
-                <a href="https://openresearch.ocadu.ca/id/eprint/3960" class="btn btn-primary btn-lg px-4">Download the white paper</a>
+                <a href="https://openresearch.ocadu.ca/id/eprint/3960" type="button" target="_blank" class="btn btn-dark rounded-pill btn-lg px-4 lead-bttn text-light fs-4 mb-2 intro-btn">Read the white paper</a> 
+                <a href="about.html" type="button" class="btn btn-outline-dark rounded-pill btn-lg px-4 fs-4 mb-2 intro-btn">About the toolkit</a> 
             </div>
 
             <hr class="col-3 col-md-2 mb-5">
-
+        
             <div class="row g-5">
                 <div class="col-md-6">
-                    <h2>Tools and templates</h2>
-                    <p>Get started with these open source tools and templates that you can quickly duplicate for your online sessions.</p>
+                    <h2 class="highlight-h2">Tools and templates</h2>
+                    <p class="fs-5">Reusable tools and templates that you can quickly duplicate for your online sessions to support diverse participation needs.<br>
+                        <!-- <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill">Meeting organizers</span></p> -->
+
                     <ul class="icon-list ps-0">
-                        <li class="d-flex align-items-start mb-1"><a href="https://docs.google.com/document/d/1yviiyA4PIPede1mBGnTz3waCN32WEziMnsjIX398Xag/edit?usp=sharing" rel="noopener" target="_blank">Participant responses template</a></li>
+                        <li class="d-flex align-items-start mb-1"><a href="/notebook/index.html" rel="noopener">Participant response notebook</a></li>
                     </ul>
                 </div>
 
                 <div class="col-md-6">
-                    <h2>Guides</h2>
-                    <p>Read more detailed instructions and documentation on how to support complex communicaiton access needs when designing, organizing, and running online sessions.</p>
+                    <h2 class="highlight-h2">Guides</h2>
+                    <p class="fs-5">Guidance on how to support complex communicaiton access needs when designing and running your online sessions.<br>
+                        <!-- <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill">Meeting organizers</span></p> -->
                     <ul class="icon-list ps-0">
-                        <li class="d-flex align-items-start mb-1"><a href="https://docs.google.com/document/d/1AZ0MnpMH3VMr7hGWkXtiprZrypmz7c5YQ_6IgrekLck/edit?usp=sharing" rel="noopener" target="_blank">Communication access guidelines for online meetings</a></li>
+                        <li class="d-flex align-items-start mb-1 fs-5"><a href="access-guidance/index.html" rel="noopener">Communication access guidance for online meetings</a></li>
 <!--                        <li class="text-muted d-flex align-items-start mb-1">Communication access guidelines for online meetings (coming soon!)</li>-->
                         
                         <!--<li class="d-flex align-items-start mb-1"><a href="/">...</a></li>
@@ -122,12 +213,31 @@
                         <li class="d-flex align-items-start mb-1"><a href="/">...</a></li>-->
                     </ul>
                 </div>
+
+                <div class="col-md-6">
+                    <h2 class="highlight-h2b">Features and plugins playground</h2>
+                    <p class="fs-5">Browse our explorartory playground of accessibility features and plugins that could be added to meeting platforms to support communication access.<br>
+                        <!-- <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill fs-6">Software developers</span> <span class="badge bg-light-subtle border border-light-subtle text-light-emphasis rounded-pill">Coming soon</span></p> -->
+                    <ul class="icon-list ps-0">
+                       <li class="text-muted d-flex align-items-start mb-1 IBM-text">AAC typing awareness indicators (coming soon!)</li>
+                       <!-- <li class="text-muted d-flex align-items-start mb-1">In-meeting collaborative notebook integration</li> -->
+                        
+                        <!--<li class="d-flex align-items-start mb-1"><a href="/">...</a></li>
+                        <li class="d-flex align-items-start mb-1"><a href="/">...</a></li>
+                        <li class="d-flex align-items-start mb-1"><a href="/">...</a></li>-->
+                    </ul>
+                </div>
+
             </div>
         </main>
+        
         <footer class="pt-5 my-5 text-muted border-top">
 <!--            This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 License</a>. -->
 <!--            &middot; -->
-            &copy; 2022 Communication Access Toolkit for Online Meetings
+            <!-- &copy; 2022 Communication Access Toolkit for Online Meetings -->
+            <p>This website is maintained and created by <a href="https://github.com/communication-access">Access to Communication Online</a>. <br>
+                It is distributed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International license</a>. Hosting provided by <a href="https://github.com/">Github</a>.<br>
+            </p>
         </footer>
     </div>
 

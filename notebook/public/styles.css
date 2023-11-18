@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  #notebook {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #messages {
+    margin-bottom: 10px;
+  }
+  
+  .message {
+    margin-bottom: 5px;
+  }
+  
+  .timestamp {
+    font-size: 0.8em;
+    color: #888;
+  }
+  

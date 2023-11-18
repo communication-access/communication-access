@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Simple Digital Notebook</title>
+</head>
+<body>
+  <div id="notebook">
+    <p>Simple Digital Notebook - Type your messages in the input field and press Enter or click 'Send' to add them to the page. Use the 'Download' button to save the conversation.</p>
+    <div id="messages"></div>
+    <input type="text" id="messageInput" placeholder="Type your message..." onkeydown="handleKeyPress(event)">
+    <button onclick="sendMessage()">Send</button>
+    <button onclick="downloadConversation()">Download</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
