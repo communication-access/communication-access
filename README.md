@@ -1,6 +1,6 @@
 # Communication Access Toolkit for Online Meetings
 
-![Toolkit Logo](https://github.com/communication-access/online-meeting-accessibility-toolkit/image/comm_1.png)
+![Toolkit Logo](https://github.com/communication-access/online-meeting-accessibility-toolkit/blob/main/image/comm_1.png?raw=true)
 
 ## Description
 
